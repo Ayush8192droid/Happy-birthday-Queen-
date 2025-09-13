@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Custom Reels Feed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Base styles from style.css */
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            text-align: center; 
+            background-color: #ffebee;
+            margin: 0;
+            padding: 20px 0;
+            color: #333;
+            transition: background-color 2s ease-in-out;
+        }
+        
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            color: #d81b60;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5em; /* Adjusted for reel titles */
+            color: #333;
+            font-weight: 600;
+        }
+
+        /* Updated Reel Container styles */
+        .reel-container {
+            margin: 25px auto;
+            width: 90%;
+            max-width: 370px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            overflow: hidden; 
+            background-color: #fff;
+            position: relative;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .reel-container .title {
+            font-size: 1.2em;
+            color: #444;
+            padding: 15px 20px;
+            margin: 0;
+            background-color: #f5f5f5;
+            border-bottom: 1px solid #eee;
+            text-align: center;
+            font-weight: 600;
+        }
+        .final-section {
+            margin-top: 40px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .final-section h2 {
+            font-size: 2rem;
+            font-family: 'Dancing Script', cursive;
+            color: #d81b60;
+        }
+        .btn {
+            background-color: #d81b60;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #b0003a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+            background-color: #000;
+            cursor: pointer;
+        }
+
+        .video-wrapper {
+            padding: 0;
+        }
+
+        /* Keyframes from style.css */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive adjustments for mobile */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>For you My birthday Girl</h1>
+
+    <div class="reel-container">
+        <h2 class="title">Reel 1</h2>
+        <div class="video-wrapper">
+            <video id="video1" controls preload="metadata">
+                <source src="Reel1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="reel-container">
+        <h2 class="title">Reel 2</h2>
+        <div class="video-wrapper">
+            <video id="video2" controls preload="metadata">
+                <source src="Reel2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    
+    <div class="reel-container">
+        <h2 class="title">Reel 3</h2>
+        <div class="video-wrapper">
+            <video id="video3" controls preload="metadata">
+                <source src="Reel3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="reel-container">
+        <h2 class="title">Reel 4</h2>
+        <div class="video-wrapper">
+            <video id="video4" controls preload="metadata">
+                <source src="Reel4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="reel-container">
+        <h2 class="title">Reel 5</h2>
+        <div class="video-wrapper">
+            <video id="video5" controls preload="metadata">
+                <source src="Reel5.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="reel-container">
+        <h2 class="title">Reel 6</h2>
+        <div class="video-wrapper">
+            <video id="video6" controls preload="metadata">
+                <source src="Reel6.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="reel-container">
+        <h2 class="title">Reel 7</h2>
+        <div class="video-wrapper">
+            <video id="video7" controls preload="metadata">
+                <source src="Reel7.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="reel-container">
+        <h2 class="title">Reel 8</h2>
+        <div class="video-wrapper">
+            <video id="video8" controls preload="metadata">
+                <source src="Reel8.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    
+    <div class="final-section">
+        <h2>Chalo ab birthday celebrate karte hai</h2>
+        <button class="btn" onclick="letsCelebrate()">Let's Celebrate</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const allVideos = document.querySelectorAll('video');
+
+            allVideos.forEach(video => {
+                video.addEventListener('play', (event) => {
+                    allVideos.forEach(otherVideo => {
+                        if (otherVideo !== event.target) {
+                            otherVideo.pause();
+                        }
+                    });
+                });
+            });
+        });
+
+        function letsCelebrate() {
+            window.location.href = 'step8.html';
+        }
+    </script>
+
+</body>
+</html>
