@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Happy birthday Queen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <audio id="backgroundMusic" src="Tera ban jaunga.mp3" loop></audio>
+
+  <div class="petals" id="petalsContainer"></div>
+  <div class="container">
+    <div class="progress-bar">
+      <div class="progress" id="progressBar"></div>
+    </div>
+    <div class="step active" id="step1">
+      <h1>Happy Birthday, My Queen 👑</h1>
+      <p>Maine tumhare liye kuch special banaya hai.</p>
+      <p>Kya tum ready ho is special journey ke liye?</p>
+      <img src="https://png.pngtree.com/png-vector/20250422/ourmid/pngtree-cute-girl-holding-birthday-cake-smiling-cheerfully-png-image_16067658.png"
+           alt="Cute girl holding a birthday cake" />
+      <button class="btn" onclick="nextStep(true)">Click Here</button>
+    </div>
+
+    <div class="step" id="step2">
+      <h2>Chalo isse personal banate hain</h2>
+      <p>Duniya ki sabse beautiful birthday girl ka naam kya hai?</p>
+      <input type="text" class="name-input" id="nameInput" placeholder="Apna naam likho..." />
+      <button class="btn" onclick="saveName()">Continue</button>
+    </div>
+
+    <div class="step" id="step3">
+      <h2>For You 👑, <span id="displayName">Baccha</span></h2>
+      <p>Heart pe click karo aur mera pyaar feel karo 💖</p>
+      <div class="heart" id="interactiveHeart" onclick="createHearts()"></div>
+      <div id="floatingHearts"></div>
+      <div id="heartMessage" class="message-box">
+        <p id="typingText"></p>
+      </div>
+      <button class="btn" onclick="nextStep()">Continue</button>
+    </div>
+
+    <div class="step" id="step4">
+      <h2>For my prettiest girl
+        </h2>
+      <div class="photo-frame">
+        <img src="https://medias.artmajeur.com/standard/17262319_a-cutel-european-girl-full-bodycartoon-style-illustration-drawn-with-posca-markers-pretty-face-586679414-1.jpg?v=1738402496" alt="A beautiful cartoon girl"/>
+      </div>
+      <div id="typedMessage" class="message-box">
+        <p id="step4Quote"></p>
+      </div>
+      <button class="btn" onclick="nextStep()">Let's See</button>
+    </div>
+
+    <div class="step" id="step5">
+      <h2>Special Moment</h2>
+      <p>Tere bina sab adhoora hai, tu hai to sab poora hai 💖</p>
+      <div class="memory-container">
+        <div class="polaroid">
+          <img src="photo1.jpg" alt="A memorable photo">
+          <div class="polaroid-caption">Happy birthday cutie 💗</div>
+        </div>
+        <div class="polaroid">
+          <img src="photo5.jpg" alt="Another memorable photo">
+          <div class="polaroid-caption">Your first birthday celebrate with me</div>
+        </div>
+      </div>
+      <button class="btn" onclick="nextStep()">Final</button>
+    </div>
+
+    <div class="step" id="step6">
+      <h1>🎉 Happy Birthday, <span id="finalName">Meri Love 💖</span>! 🎂</h1>
+      <p> 🎂 Happy birthday uss cutie ko jisse me bhut pyar karta hu 💖  </p>
+      <p>✨ Tumhara din khushiyon, hasi aur pyaar se bhara ho ✨</p>
+      <p>🌟 Har pal, Har din tumhe khushiya mile and always keeping smile  🌕</p>
+      <p> 📿 I pray to god that Tum hamesha mere sath raho</p>
+      <p>And 
+      I love you so much💗 💫</p>
+      <div class="signature"></div>
+      <button class="btn" onclick="nextStep()">Next</button>
+    </div>
+
+    <div class="step" id="step7">
+      <h1 class="celebrate-title">Let's see Reels</h1>
+      <p class="celebrate-msg">For your special day</p>
+      <button class="btn" onclick="Watchreel()">Watch reels</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
