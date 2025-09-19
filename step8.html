@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Birthday Celebration!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <link rel="stylesheet" href="step8.css"/>
+</head>
+<body>
+  <div class="celebration-screen active" id="celebrationScreen">
+    <div id="step8" class="step">
+      <div class="lights-container" id="lightsContainer">
+        <div class="bulb" id="bulb_yellow"></div>
+        <div class="bulb" id="bulb_red"></div>
+        <div class="bulb" id="bulb_blue"></div>
+        <div class="bulb" id="bulb_green"></div>
+        <div class="bulb" id="bulb_pink"></div>
+        <div class="bulb" id="bulb_orange"></div>
+      </div>
+
+      <div class="balloons-container" id="balloonsContainer">
+        <div class="balloons"><h2 style="color:#F2B300;">H</h2></div>
+        <div class="balloons"><h2 style="color:#0719D4;">B</h2></div>
+        <div class="balloons"><h2 style="color:#D14D39;">D</h2></div>
+        <div class="balloons"><h2 style="color:#8FAD00;">👑</h2></div>
+        <div class="balloons"><h2 style="color:#8377E4;">👸</h2></div>
+      </div>
+
+      <div class="cake-container" id="cakeContainer">
+        <img id="customCakeImg" src="https://media1.tenor.com/m/6FSUInyIrvUAAAAd/happy-birthday-birthday-cake.gif" alt="Birthday Cake" />
+      </div>
+      
+      <img id="cornerGif" src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyc2R0Nmh4dGhpeTd0NWU1bDlmYTBlbHgwdGo4NDNoODd5ejhqb3YzNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Oe6KwpM7tmAyJ8mUTR/200w.webp" alt="Celebration GIF">
+
+      <h1 class="final-bday-message" id="finalBdayMessage">Happy Birthday To You!</h1>
+      <p class="final-message" id="finalMessage">I love you 💗  </p>
+      <div class="signature" id="step8-signature">Kesa laga surprise</div>
+
+      <audio class="song" id="lightsSong" loop>
+        <source src="light.mp3"></source>
+      </audio>
+
+      <audio class="song" id="happyBdaySong" loop>
+        <source src="hbd.mp3"></source>
+        Your browser isn't invited for super fun audio time.
+      </audio>
+    </div>
+    <canvas id="confettiCanvas"></canvas>
+  </div>
+
+  <div class="step8-buttons-container">
+    <button class="btn" id="turnOnLightsBtn" onclick="turnOnLights()">Turn On Lights 💡</button>
+    <button class="btn" id="decorateBtn" onclick="letsDecorate()">Let's Decorate 🎉</button>
+    <button class="btn" id="happyBirthdayBtn" onclick="happyBirthday()">Happy Birthday 🎂</button>
+  </div>
+  <script src="step8.js"></script>
+</body>
+</html>
